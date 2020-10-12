@@ -1,43 +1,24 @@
-# JavaScript Quiz
+# Development Strategy
 
-...
+> `Restful app`
 
----
+A basic web page aim to learn Fetch API and Methods of REST API.
 
-## User Story Dependencies
+## Wireframe
 
-[Story Dependency Diagram](https://excalidraw.com/)
+![wireframe](./restfull.png)
 
----
+## 0. Set-Up
 
-## WIREFRAME
+_A User can see my initial repository and live demo_
 
-![wireframe]()
+### Repository
 
----
-
-## 0.Setup
-
----
-
-## 1. Initialize Application
-
-__As a user I want to see the initial page when I load the site__
-
-- _Given [context] when [a specific action is performed] then [a set of consequences should occur]__
-- ...
-
-### REPO
-
-- This user story is developed on branch `_`.
-- This branch is merged to `master` branch after completion.
-
-### Task A
-
-### Task B
-
-### Task ...
-
----
-
-## ...
+- Created a new repository from this [template](https://github.com/HackYourFutureBelgium/restful-pjs)
+- Clone the repository
+- Write initial, basic README
+- Add a wireframe
+- Start the development strategy
+- Prepare a project board
+- Push the changes to GitHub
+- Turn on GitHub Pages
