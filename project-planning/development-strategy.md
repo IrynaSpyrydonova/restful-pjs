@@ -22,3 +22,23 @@ _A User can see my initial repository and live demo_
 - Prepare a project board
 - Push the changes to GitHub
 - Turn on GitHub Pages
+
+## 1. Basic Style
+
+**As a site visitor, I want to see styled website for my todo list.**
+
+This user story has been developed through a branch called 'style'.
+
+> Assign to **Mamé Azad**
+
+### HTML
+
+Add bootstrap classes
+
+### CSS
+
+Styled todo list
+
+### javascript
+
+No changes
