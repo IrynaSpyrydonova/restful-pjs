@@ -42,3 +42,25 @@ Styled todo list
 ### javascript
 
 No changes
+
+## 2. Store Todo
+
+**As a site visitor, I want to store my todo tasks.**
+
+This user story has been developed through a branch called 'post'.
+
+> Assign to **Mamé Azad**
+
+### HTML
+
+No changes
+
+### CSS
+
+No changes
+
+### javascript
+
+- Add class
+- Fetched API
+- Use Post Methods to store Todo Tasks
