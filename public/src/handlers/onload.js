@@ -1,8 +1,10 @@
 import { app } from '../classes/app.js';
 import { restFulMethods } from '../restful/restful.js';
 
+
 // first instance of class
 export const appInstance = new app();
+
 export const initialLoad = () => {
 	// fetch all data from data base
 	restFulMethods.getAll().then((data) => {
