@@ -1,3 +1,6 @@
+import { handlerCheckTodo } from "../handlers/checkedTask.js";
+import { handlerDeleteTodo } from "../handlers/deletetask.js";
+
 export class app {
 	state = [];
 	nexId = 0;
@@ -16,6 +19,7 @@ export class app {
 			const TdEl = document.createElement('td');
 			const checkBoxEl = document.createElement('input');
 			checkBoxEl.type = 'checkbox';
+			checkBoxEl.addEventListener('click',handlerCheckTodo)
 
 			checkBoxEl.dataset.index = todo.id;
 
@@ -47,6 +51,7 @@ export class app {
 			iEl.className = 'fa fa-times';
 			tdElLast.appendChild(iEl);
 			divElFourth.appendChild(tdElLast);
+			tdElLast.addEventListener('click', handlerDeleteTodo)
 
 			DivEl.appendChild(divElSecond);
 			DivEl.appendChild(divElThird);
