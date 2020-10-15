@@ -1,5 +1,6 @@
-import { handlerCheckTodo } from "../handlers/checkedTask.js";
-import { handlerDeleteTodo } from "../handlers/deletetask.js";
+import { handlerCheckTodo } from '../handlers/checkedTask.js';
+import { handlerDeleteTodo } from '../handlers/deletetask.js';
+import { restFulMethods } from '../restful/restful.js';
 
 export class app {
 	state = [];
@@ -19,7 +20,7 @@ export class app {
 			const TdEl = document.createElement('td');
 			const checkBoxEl = document.createElement('input');
 			checkBoxEl.type = 'checkbox';
-			checkBoxEl.addEventListener('click',handlerCheckTodo)
+			checkBoxEl.addEventListener('click', handlerCheckTodo);
 
 			checkBoxEl.dataset.index = todo.id;
 
@@ -32,6 +33,7 @@ export class app {
 			divElThird.classList.add('wrapper-input');
 			const inputEl = document.createElement('input');
 			inputEl.type = 'text';
+			inputEl.addEventListener('change', this.modifyTodoList.bind(this));
 			inputEl.placeholder = todo.todoText;
 			inputEl.dataset.index = todo.id;
 
@@ -51,7 +53,7 @@ export class app {
 			iEl.className = 'fa fa-times';
 			tdElLast.appendChild(iEl);
 			divElFourth.appendChild(tdElLast);
-			tdElLast.addEventListener('click', handlerDeleteTodo)
+			tdElLast.addEventListener('click', handlerDeleteTodo);
 
 			DivEl.appendChild(divElSecond);
 			DivEl.appendChild(divElThird);
@@ -85,5 +87,13 @@ export class app {
 
 	get lastId() {
 		return this.nexId;
+	}
+
+	modifyTodoList(event) {
+		const target = event.target.value;
+
+		const id = event.target.dataset.index;
+
+		restFulMethods.patchTodo(id, { 'todoText': target, 'id': target });
 	}
 }

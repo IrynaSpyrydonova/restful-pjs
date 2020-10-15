@@ -13,7 +13,6 @@ export const restFulMethods = {
 	},
 
 	postTodo: async function (newTodo) {
-		debugger
 		try {
 			const res = await fetch(url, {
 				method: 'POST',
@@ -30,26 +29,26 @@ export const restFulMethods = {
 
 	patchTodo: async function (id, patcher) {
 		try {
-		  const res = await fetch(`${url}/` + id, {
-			method: 'PATCH',
-			body: JSON.stringify(patcher),
-			headers: {
-			  "Content-type": "application/json; charset=UTF-8"
-			}
-		  });
-		  return await res.json();
+			const res = await fetch(`${url}/` + id, {
+				method: 'PATCH',
+				body: JSON.stringify(patcher),
+				headers: {
+					'Content-type': 'application/json; charset=UTF-8',
+				},
+			});
+			return await res.json();
 		} catch (err) {
-		  console.log(err);
-		};
-	  },
-	  deleteTodo: async function (id) {
+			console.log(err);
+		}
+	},
+	deleteTodo: async function (id) {
 		try {
-		  const res = await fetch(`${url}/` + id, {
-			method: 'DELETE'
-		  });
-		  return await res.json();
+			const res = await fetch(`${url}/` + id, {
+				method: 'DELETE',
+			});
+			return await res.json();
 		} catch (err) {
-		  console.log(err);
-		};
-	  },
+			console.log(err);
+		}
+	},
 };
