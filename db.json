@@ -2,14 +2,9 @@
   "todos": [
     {
       "completed": true,
-      "todoText": "Stdud Fetch API",
+      "todoText": "s",
       "id": 4,
       "currentIdTodo": "4"
-    },
-    {
-      "completed": true,
-      "todoText": "1c67",
-      "id": 6
     },
     {
       "completed": true,
@@ -35,17 +30,19 @@
       "currentIdTodo": "12"
     },
     {
-      "todoText": "kjzx ",
+      "todoText": "do you home work",
       "completed": false,
-      "id": 19
+      "id": 19,
+      "currentIdTodo": "19"
     },
     {
-      "todoText": "xkj ",
+      "todoText": "fun fun ",
       "completed": false,
-      "id": 20
+      "id": 20,
+      "currentIdTodo": "20"
     },
     {
-      "todoText": "new",
+      "todoText": "ddd",
       "completed": false,
       "id": 21
     }

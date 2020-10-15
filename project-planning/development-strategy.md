@@ -64,3 +64,24 @@ No changes
 - Add class
 - Fetched API
 - Use Post Methods to store Todo Tasks
+
+## 3. Modify Task Lists
+
+**As a site visitor, I want to modify my todo task list.**
+
+This user story has been developed through a branch called 'modify-tasks'.
+
+> Assign to **Mamé Azad**
+
+### HTML
+
+No changes
+
+### CSS
+
+No changes
+
+### javascript
+
+- Fetched API
+- Use Patch Methods to modify todo tasks
