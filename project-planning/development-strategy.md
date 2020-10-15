@@ -85,3 +85,45 @@ No changes
 
 - Fetched API
 - Use Patch Methods to modify todo tasks
+
+## 4. Mark, as completed Task 
+
+**As a site visitor, I want to check my todo task, as done.**
+
+This user story has been developed through a branch called 'check-delete'.
+
+> Assign to **Iryna Spyrydonova**
+
+### HTML
+
+No changes
+
+### CSS
+
+No changes
+
+### javascript
+
+- Fetched API
+- Use Patch Methods to modify todo tasks
+
+## 5. Delete Task Lists
+
+**As a site visitor, I want to delete some todo from  task list.**
+
+This user story has been developed through a branch called 'check-delete'.
+
+> Assign to **Iryna Spyrydonova**
+
+### HTML
+
+No changes
+
+### CSS
+
+No changes
+
+### javascript
+
+- Fetched API
+- Use DELETE Methods to modify todo tasks
